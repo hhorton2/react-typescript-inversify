@@ -10,15 +10,18 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "faker": "^4.1.0",
+    "inversify": "^5.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "reflect-metadata": "^0.1.13",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.21.4",
+    "@types/faker": "^4.1.12",
+    "@types/testing-library__dom": "7.5.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "prettier": "^2.0.5",
+    "synchronous-promise": "^2.0.13"
   }
 }
